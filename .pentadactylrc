@@ -1,0 +1,8 @@
+" j/k でのスクロール幅を 1行 から 5行 に変更
+nnoremap j 5j
+nnoremap k 5k
+set hintkeys=asdfghjkl; 
+" GUI設定（Bookmark, Command line, Bottom&Right scrollbar, Status bar）
+set guioptions=BCbrs
+" 日本語のイライラを解消
+style -name commandline-ime chrome://* #dactyl-commandline-command input {ime-mode: inactive;}
