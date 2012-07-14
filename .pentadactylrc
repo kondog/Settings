@@ -3,6 +3,7 @@ nnoremap j 5j
 nnoremap k 5k
 set hintkeys=asdfghjkl; 
 " GUI設定（Bookmark, Command line, Bottom&Right scrollbar, Status bar）
-set guioptions=BCbrs
+set guioptions=TBCbrs
 " 日本語のイライラを解消
 style -name commandline-ime chrome://* #dactyl-commandline-command input {ime-mode: inactive;}
+
