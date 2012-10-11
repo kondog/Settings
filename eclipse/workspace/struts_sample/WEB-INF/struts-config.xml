@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+	"http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<form-beans>
+		<form-bean
+			name="AuthenticationForm"
+			type="struts.AuthenticationForm"/>
+	</form-beans>
+	<global-forwards>
+		<forward name="fail" path="/login.jsp"/>
+	</global-forwards>
+	<action-mappings>
+		<action path="/authentication"
+			type="struts.AuthenticationAction"
+			name="AuthenticationForm"
+			scope="session">
+			<forward name="success" path="/welcome.jsp"/>
+			<forward name="fail"    path="/login.jsp"/>
+		</action>
+		<action path="/calcuration"
+			type="struts.CalcurationAction"
+			name="CalcurationForm"
+			scope="session">
+		<forward name="success" path="/calcResult.jsp"></forward>
+		<forward name="fail" path="/login.jsp"></forward>
+		</action>
+	</action-mappings>
+	<message-resources parameter="resources.application"/>
+</struts-config>
