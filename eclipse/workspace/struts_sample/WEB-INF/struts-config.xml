@@ -8,6 +8,9 @@
 		<form-bean
 			name="AuthenticationForm"
 			type="struts.AuthenticationForm"/>
+		<form-bean 
+			name="CalcurationForm" 
+			type="struts.CalcurationForm"/>
 	</form-beans>
 	<global-forwards>
 		<forward name="fail" path="/login.jsp"/>

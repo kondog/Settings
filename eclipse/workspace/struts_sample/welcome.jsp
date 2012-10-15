@@ -21,7 +21,7 @@ Welcome
 	<html:text property="num2" size="3" />
 	<br>
 	<html:submit property="submit" value="送信" />
-<html:form>
+</html:form>
 
 </body>
 </html>

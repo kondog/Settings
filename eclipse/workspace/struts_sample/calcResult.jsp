@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib uri="/WEB-INF/tld/struts-bean.tld"  prefix="bean" %>
 
-<logic:notPresent name="result" scope="sessiont">
+<logic:notPresent name="result" scope="session">
 	<logic:redirect forward="fail" />
 </logic:notPresent>
 
